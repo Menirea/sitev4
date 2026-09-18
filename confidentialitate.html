@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidențialitate — Menirea</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Ccircle cx='13' cy='13' r='12' fill='%23EDF0E7'/%3E%3Ccircle cx='13' cy='13' r='10' fill='none' stroke='%2314584A' stroke-width='1.4'/%3E%3Ccircle cx='13' cy='13' r='2.6' fill='%23B8860F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html"><span><b>Menirea</b><br><small>orientare în carieră</small></span></a>
+  <a class="btn btn-ghost btn-sm" href="index.html">Înapoi</a>
+</header>
+
+<main>
+<section>
+  <div class="wrap" style="max-width:760px">
+    <p class="eyebrow">Politica de confidențialitate</p>
+    <h1 style="margin-bottom:1.4rem">Ce se întâmplă cu datele tale</h1>
+
+    <h2 style="margin:2rem 0 .8rem">Cine este operatorul</h2>
+    <p><span data-op-nume></span>, CUI <span data-op-cui></span>, cu sediul în <span data-op-adresa></span>. Ne poți scrie la <a class="js-mailto" data-show-email="1" href="#"></a>.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Ce date colectăm</h2>
+    <p>Prin acest site, niciuna. Nu îți cerem nume, email, telefon sau cont. Nu folosim formulare de înregistrare.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Unde ajung răspunsurile din test</h2>
+    <p>Răspunsurile tale la cele 60 de întrebări și profilul rezultat sunt salvate exclusiv în memoria locală a browserului tău (<em>localStorage</em>), pe dispozitivul de pe care faci testul. Nu sunt transmise către noi și nu sunt stocate pe niciun server. Calculul profilului și al potrivirilor se face în browserul tău, cu cod care rulează local.</p>
+    <p>Consecința practică: dacă golești datele browserului, dacă folosești alt dispozitiv sau alt browser, rezultatul nu mai este disponibil. Nu îl putem recupera, pentru că nu îl avem.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Cookie-uri</h2>
+    <p>Site-ul nu folosește cookie-uri de urmărire, de publicitate sau de analiză. Folosim doar stocarea locală descrisă mai sus, strict necesară pentru serviciul pe care l-ai cerut explicit — să poți întrerupe testul și să îl continui, și să îți vezi rezultatul. Din acest motiv nu îți afișăm o casetă de consimțământ pentru cookie-uri.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Servicii terțe</h2>
+    <p>Fonturile site-ului sunt încărcate de la Google Fonts. Această încărcare presupune o cerere către serverele Google, care poate include adresa ta IP și informații tehnice despre browser. Dacă vrei să eviți complet acest lucru, fonturile pot fi găzduite local — vezi instrucțiunile din fișierul <code>README.md</code> al site-ului. În afară de aceasta, site-ul nu încarcă niciun alt script sau resursă externă.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Cum ștergi datele</h2>
+    <p>Ai butonul <strong>„Șterge răspunsurile”</strong> în pagina de rezultat. Poți de asemenea să golești datele site-ului din setările browserului. Ștergerea este imediată și definitivă.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Drepturile tale</h2>
+    <p>Regulamentul (UE) 2016/679 (GDPR) îți dă dreptul de acces, rectificare, ștergere, restricționare, portabilitate și opoziție cu privire la datele tale personale. Pentru că nu deținem date personale despre tine prin acest site, aceste drepturi nu au un obiect practic aici — nu avem ce să îți furnizăm sau să ștergem de partea noastră. Dacă totuși ai o întrebare sau o sesizare, scrie-ne la adresa de mai sus. Ai și dreptul de a depune plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), <a href="https://www.dataprotection.ro" target="_blank" rel="noopener">dataprotection.ro</a>.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Minori</h2>
+    <p>Testul poate fi folosit și de elevi. Pentru că nu colectăm date personale, nu prelucrăm date ale minorilor. Recomandăm totuși ca rezultatul să fie discutat cu un părinte, un profesor sau un consilier școlar.</p>
+
+    <h2 style="margin:2rem 0 .8rem">Modificări</h2>
+    <p>Dacă schimbăm modul în care funcționează site-ul, actualizăm acest text și data de mai jos înainte de a pune schimbarea în producție.</p>
+    <p class="copy">Ultima actualizare: <span id="an"></span></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="index.html#metodologie">Metodologie</a></li>
+      <li><a href="termeni.html">Termeni</a></li>
+      <li><a id="mailto" href="#">Contact</a></li>
+    </ul>
+    <p class="copy">© <span id="an2"></span> Menirea · <span id="operator"></span></p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script>document.getElementById("an2").textContent = new Date().getFullYear();</script>
+</body>
+</html>
